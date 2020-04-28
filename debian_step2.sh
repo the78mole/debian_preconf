@@ -12,7 +12,7 @@ usermod -G sudo $FIRSTUSER
 apt update
 apt upgrade
 
-apt install sudo vim git command-not-found
+apt install sudo vim git command-not-found htop net-tools
 
 apt update
 update-command-not-found
