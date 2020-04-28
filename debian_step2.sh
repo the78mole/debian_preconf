@@ -26,6 +26,10 @@ HERE
 cp /etc/skel/.bash_aliases ~/
 cp ~/.bash_aliases /home/$FIRSTUSER/
 
+# Get a bashrc skeleton with a nice color_prompt (root is red, user is green)
+wget -O ~/.bashrc https://raw.githubusercontent.com/the78mole/debian_preconf/master/bashrc_skel
+cp ~/.bashrc /etc/skel/.bashrc
+
 cat >/etc/vim/vimrc.local <<HERE
 runtime! debian.vim
 
